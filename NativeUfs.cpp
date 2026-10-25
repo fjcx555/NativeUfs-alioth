@@ -1192,9 +1192,9 @@ static uint32_t be32w (const uint8_t *at)
 }
 
 #include "RootLayout.h"
+#include "RootPublication.h"
 #if !defined(NATIVE_UFS_PROBE_ONLY) || !NATIVE_UFS_PROBE_ONLY
 #include "RootWindowRead.h"
-#include "RootPublication.h"
 #endif
 
 }
