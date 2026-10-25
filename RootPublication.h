@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: BSD-2-Clause-Patent
 #pragma once
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-function"
 // Shared production lifecycle decisions; adapters own IOKit objects and waits.
 struct UfsRootPlan { unsigned count = 0, order[4] = {}; };
 static bool ufsBuildRootPlan (const char *const *names, unsigned count, UfsRootPlan &plan)
@@ -82,3 +84,4 @@ static bool ufsMediaHasAncestor (Iterator &iterator, Entry *window)
   }
   return false;
 }
+#pragma clang diagnostic pop
